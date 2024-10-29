@@ -5,7 +5,10 @@ require('./db/index')
 app.use(express.json());
 const port = process.env.PORT || 4000;
 
-app.use(cors());
+app.use(cors({
+    origin: ['http://localhost:3000', 'https://eventify-gilt-gamma.vercel.app'],
+    credentials: true
+}));
 
 app.get('/', (req, res) => {
     res.send('v.1.0.13')
