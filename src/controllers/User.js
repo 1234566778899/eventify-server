@@ -8,6 +8,7 @@ const register = async (req, res) => {
         return res.status(500).json({ error: 'Internal Server Error' });
     }
 }
+
 const getInfo = async (req, res) => {
     try {
         const { email } = req.params;
