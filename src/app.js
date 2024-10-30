@@ -17,6 +17,7 @@ app.get('/', (req, res) => {
 app.use('/users', require('./routes/User'));
 app.use('/spaces', require('./routes/Space'));
 app.use('/reservations', require('./routes/Reservation'));
+app.use('/subscription', require('./routes/Subscription'));
 
 app.listen(port, () => {
     console.log('server running on port: ' + port);

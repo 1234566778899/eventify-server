@@ -5,7 +5,8 @@ const UserSchema = Schema({
     lname: String,
     email: String,
     cellphone: String,
-    active: { type: Boolean, default: false }
+    active: { type: Boolean, default: false },
+    subscribed: { type: Boolean, default: false }
 }, {
     timestamps: true
 })
