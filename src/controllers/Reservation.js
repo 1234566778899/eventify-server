@@ -15,6 +15,7 @@ const registerReservation = async (req, res) => {
             user: userRef._id,
             own
         });
+
         return res.status(200).json({ message: 'Reservación registrada con éxito', reservation: newReservation });
     } catch (error) {
         console.log(error);
